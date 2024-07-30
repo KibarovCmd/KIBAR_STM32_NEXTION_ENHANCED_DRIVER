@@ -6,7 +6,7 @@ Question: How to Use Kibar Nextion HMI Driver?
 
 If the command you are using is a Nextion tools command, you only need to include the header file related to that tool in your project. The aim here is to avoid unnecessary memory usage and prevent compilation of libraries that you do not use. If the command is a general Nextion command, it will be sufficient to include only the "kibar_nextion.h" header file.
 
-The Kibar Nextion HMI driver, like all Kibar drivers, requires the creation of a Kibar struct. In the Nextion HMI driver, this is referred to as KIBAR_NEXTION (The KIBAR_NEXTION structure is created with a reference to the UART peripheral unit to which it is connected.).
+The Kibar Nextion HMI driver, like all Kibar drivers, requires the creation of a KIBAR struct. In the Nextion HMI driver, this is referred to as KIBAR_NEXTION (The KIBAR_NEXTION structure is created with a reference to the UART peripheral unit to which it is connected.).
 
 To create it, the NEW_KIBAR_NEXTION() function should be called as shown in the image below.
 
@@ -36,6 +36,14 @@ Question: Why am I having problems even though I get "kibar_OK" as the return va
 
 Most likely, there is a connection issue between the Nextion HMI and the board. Please check your connections.
 
+Question: How should UART be used?
+
+You should configure the UART peripheral in asynchronous mode.
+
+Question: The library is not visible to the compiler. What should I do?
+
+This is a common issue and indicates that the paths to the header files are not set correctly. From the project settings, add the header file paths to the project for all configurations.
+
 # KIBAR_STM32_NEXTION_ENHANCED_SÜRÜCÜSÜ
 [TR]
 HAL kütüphanesini temel alan, tüm STM32XXXX mikrodenetleyicilerini ve kartlarını desteklemek için geliştirilmiş bir Nextion ENHANCED, DISCOVERY ve BASIC HMI sürücüsüdür. Spesifik bazı özellikler dışındaki tüm Nextion HMI komut setlerini destekler.
@@ -44,7 +52,7 @@ Soru: Kibar Nextion HMI Sürücüsü Nasıl Kullanılır?
 
 Kullandığınız komut bir Nextion aracı komutu ise projenize yalnızca o araçla ilgili başlık dosyasını eklemeniz yeterlidir. Burada amaç gereksiz hafıza kullanımının önüne geçmek ve kullanmadığınız kütüphanelerin derlenmesini önlemektir. Eğer komut genel bir Nextion komutu ise projenize sadece “kibar_nextion.h” başlık dosyasının eklenmesi yeterli olacaktır.
 
-Tüm Kibar sürücüleri gibi Kibar Nextion HMI sürücüsü de bir Kibar yapısının oluşturulmasını gerektirir. Nextion HMI sürücüsünde bu KIBAR_NEXTION adı ile refere edilmiştir (KIBAR_NEXTION yapısı bağlı olduğu UART çevre birimini referans alarak oluşturulur.).
+Tüm Kibar sürücüleri gibi Kibar Nextion HMI sürücüsü de bir KIBAR yapısının oluşturulmasını gerektirir. Nextion HMI sürücüsünde bu KIBAR_NEXTION adı ile refere edilmiştir (KIBAR_NEXTION yapısı bağlı olduğu UART çevre birimini referans alarak oluşturulur.).
 
 Bunu oluşturmak için aşağıdaki görseldeki gibi NEW_KIBAR_NEXTION() fonksiyonunun çağrılması gerekmektedir.
 
@@ -73,3 +81,11 @@ Muhtemelen UART çevre birimi ile ilgili bir hatayla karşılaşıyorsunuz veya 
 Soru: Dönüş değeri olarak "kibar_OK" alıyorum ancak neden hala sorun yaşıyorum?
 
 Büyük olasılıkla Nextion HMI ile kart arasında bir bağlantı sorunu var. Lütfen bağlantılarınızı kontrol edin.
+
+Soru: UART birimi hangi ayarlar ile kullanılmalı?
+
+UART çevre birimini asenkronize modda yapılandırmanız gerekir.
+
+Soru: Kütüphane derleyici tarafından görülemiyor. Ne yapmalıyım?
+
+Bu yaygın bir sorundur ve başlık dosyalarına giden yolların doğru şekilde ayarlanmadığını gösterir. Proje ayarlarından tüm konfigürasyonlar için başlık dosyalarının yolunu projeye ekleyin.
