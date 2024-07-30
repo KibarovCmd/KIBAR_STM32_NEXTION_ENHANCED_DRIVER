@@ -7,7 +7,7 @@
 
 #include <kibar_nextion.h>
 
-KIBAR_NEXTION* NEW_KIBAR_NEXTION(UART_HandleTypeDef* kibar_uart) {
+KIBAR_NEXTION_ NEW_KIBAR_NEXTION(UART_HandleTypeDef* kibar_uart) {
 	KIBAR_NEXTION* kibar_nextion = (KIBAR_NEXTION*)malloc(sizeof(KIBAR_NEXTION));
 	kibar_nextion->kibar_uart_ = kibar_uart;
 	return kibar_nextion;
