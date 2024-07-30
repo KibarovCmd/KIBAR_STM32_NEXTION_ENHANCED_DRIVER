@@ -9,23 +9,21 @@ The Kibar Nextion HMI driver, like all Kibar drivers, requires the creation of a
 
 To create it, the NEW_KIBAR_NEXTION() function should be called as shown in the image below.
 
-<img src="Images/IMAGE1" width="auto">
+<img src="Images/IMAGE1.png" width="auto">
 
 Afterwards, you should create a structure for the Nextion tool you added. The general naming convention is as follows: KIBAR_NEXTION_TOOLS_NAME_. To create this structure in memory, you should call the creation command. The general naming convention is as follows: NEW_KIBAR_NEXTION_TOOLS_NAME(KIBAR_NEXTION_, char*, char*); Except for the Waveform and Page structures, all structures take three parameters. These are: the previously created KIBAR_NEXTION structure, the name of the page where the tool is located, and the name of the tool. The Waveform structure additionally takes an id, while the Page structure does not take the tool name.
 
-<img src="Images/IMAGE2" width="auto">
+<img src="Images/IMAGE2.png" width="auto">
 
 You can now access the properties of the structures you have created through the structure itself. Below is an example code usage:
 
-<img src="Images/IMAGE3" width="auto">
+<img src="Images/IMAGE3.png" width="auto">
 
 When using the properties of the created Nextion structures, you need to provide the structure itself and the necessary values related to that structure property as parameters.
 
-<img src="Images/IMAGE4" width="auto">
-
-
 As with all KIBAR drivers, the KIBAR_NEXTION driver returns a value of type KIBAR_STATUS for all its properties. If your code isn't working, you can check the returned KIBAR_STATUS value to verify whether the Nextion structure is functioning correctly.
 
+<img src="Images/IMAGE4.png" width="auto">
 
 Why am I getting "kibar_ERROR" as the return value?
 
