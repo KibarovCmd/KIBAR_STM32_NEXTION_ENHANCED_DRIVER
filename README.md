@@ -6,7 +6,7 @@ It is a Nextion Enhanced, Discovery and Basic HMI driver developed to support al
 
 If the command you are using is a Nextion tools command, you only need to include the header file related to that tool in your project. The aim here is to avoid unnecessary memory usage and prevent compilation of libraries that you do not use. If the command is a general Nextion command, it will be sufficient to include only the "kibar_nextion.h" header file.
 
-The Kibar Nextion HMI driver, like all Kibar drivers, requires the creation of a KIBAR struct. In the Nextion HMI driver, this is referred to as KIBAR_NEXTION (The KIBAR_NEXTION structure is created with a reference to the UART peripheral unit to which it is connected.).
+The Kibar Nextion HMI driver, like all Kibar drivers, requires the creation of a KIBAR struct. In the Nextion HMI driver, this is referred to as KIBAR_NEXTION_ (The KIBAR_NEXTION structure is created with a reference to the UART peripheral unit to which it is connected.).
 
 To create it, the NEW_KIBAR_NEXTION() function should be called as shown in the image below.
 
@@ -60,7 +60,7 @@ HAL kütüphanesini temel alan, tüm STM32XXXX mikrodenetleyicilerini ve kartlar
 
 Kullandığınız komut bir Nextion aracı komutu ise projenize yalnızca o araçla ilgili başlık dosyasını eklemeniz yeterlidir. Burada amaç gereksiz hafıza kullanımının önüne geçmek ve kullanmadığınız kütüphanelerin derlenmesini önlemektir. Eğer komut genel bir Nextion komutu ise projenize sadece “kibar_nextion.h” başlık dosyasının eklenmesi yeterli olacaktır.
 
-Tüm Kibar sürücüleri gibi Kibar Nextion HMI sürücüsü de bir KIBAR yapısının oluşturulmasını gerektirir. Nextion HMI sürücüsünde bu KIBAR_NEXTION adı ile refere edilmiştir (KIBAR_NEXTION yapısı bağlı olduğu UART çevre birimini referans alarak oluşturulur.).
+Tüm Kibar sürücüleri gibi Kibar Nextion HMI sürücüsü de bir KIBAR yapısının oluşturulmasını gerektirir. Nextion HMI sürücüsünde bu KIBAR_NEXTION_ adı ile refere edilmiştir (KIBAR_NEXTION yapısı bağlı olduğu UART çevre birimini referans alarak oluşturulur.).
 
 Bunu oluşturmak için aşağıdaki görseldeki gibi NEW_KIBAR_NEXTION() fonksiyonunun çağrılması gerekmektedir.
 
