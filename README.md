@@ -2,7 +2,7 @@
 [EN]
 It is a Nextion Enhanced, Discovery and Basic HMI driver developed to support all STM32XXXX microcontrollers and boards, based on the HAL library. It supports all Nextion HMI command sets except for specific features.
 
-<strong>Question</strong>: How to Use Kibar Nextion HMI Driver?
+<strong>Question</strong>: <em>How to Use Kibar Nextion HMI Driver?</em>
 
 If the command you are using is a Nextion tools command, you only need to include the header file related to that tool in your project. The aim here is to avoid unnecessary memory usage and prevent compilation of libraries that you do not use. If the command is a general Nextion command, it will be sufficient to include only the "kibar_nextion.h" header file.
 
@@ -28,27 +28,27 @@ As with all KIBAR drivers, the KIBAR_NEXTION driver returns a value of type KIBA
 
 <img src="Images/IMAGE4.png" width="auto">
 
-<strong>Question</strong>: Why am I getting "kibar_ERROR" as the return value?
+<strong>Question</strong>: <em>Why am I getting "kibar_ERROR" as the return value?</em>
 
 You are likely encountering an error related to the UART peripheral unit or providing a value that is outside the range of valid limits for the property of the Nextion structure you are using.
 
-<strong>Question</strong>: Why am I having problems even though I get "kibar_OK" as the return value?
+<strong>Question</strong>: <em>Why am I having problems even though I get "kibar_OK" as the return value?</em>
 
 Most likely, there is a connection issue between the Nextion HMI and the board. Please check your connections.
 
-<strong>Question</strong>: How should UART be used?
+<strong>Question</strong>: <em>How should UART be used?</em>
 
 You should configure the UART peripheral in asynchronous mode.
 
-<strong>Question</strong>: The library is not visible to the compiler. What should I do?
+<strong>Question</strong>: <em>The library is not visible to the compiler. What should I do?</em>
 
 This is a common issue and indicates that the paths to the header files are not set correctly. From the project settings, add the header file paths to the project for all configurations.
 
-<strong>Question</strong>: Can it be used with other KIBAR libraries?
+<strong>Question</strong>: <em>Can it be used with other KIBAR libraries?</em>
 
 Yes, it can be easily used with other KIBAR libraries.
 
-<strong>Questio</strong>n: How can I access the complete version of the library?
+<strong>Questio</strong>n: <em>How can I access the complete version of the library?</em>
 
 Contact the social media accounts listed on the GitHub profile to request the complete version of the library.
 
@@ -56,7 +56,7 @@ Contact the social media accounts listed on the GitHub profile to request the co
 [TR]
 HAL kütüphanesini temel alan, tüm STM32XXXX mikrodenetleyicilerini ve kartlarını desteklemek için geliştirilmiş bir Nextion ENHANCED, DISCOVERY ve BASIC HMI sürücüsüdür. Spesifik bazı özellikler dışındaki tüm Nextion HMI komut setlerini destekler.
 
-<strong>Soru</strong>: Kibar Nextion HMI Sürücüsü Nasıl Kullanılır?
+<strong>Soru</strong>: <em>Kibar Nextion HMI Sürücüsü Nasıl Kullanılır?</em>
 
 Kullandığınız komut bir Nextion aracı komutu ise projenize yalnızca o araçla ilgili başlık dosyasını eklemeniz yeterlidir. Burada amaç gereksiz hafıza kullanımının önüne geçmek ve kullanmadığınız kütüphanelerin derlenmesini önlemektir. Eğer komut genel bir Nextion komutu ise projenize sadece “kibar_nextion.h” başlık dosyasının eklenmesi yeterli olacaktır.
 
@@ -82,30 +82,30 @@ Tüm KIBAR sürücülerinde olduğu gibi, KIBAR_NEXTION sürücüsü de tüm öz
 
 <img src="Images/IMAGE4.png" width="auto">
 
-<strong>Soru</strong>: Neden dönüş değeri olarak "kibar_ERROR" alıyorum?
+<strong>Soru</strong>: <em>Neden dönüş değeri olarak "kibar_ERROR" alıyorum?</em>
 
 Muhtemelen UART çevre birimi ile ilgili bir hatayla karşılaşıyorsunuz veya kullandığınız Nextion yapısının özelliği için geçerli limit aralığının dışında bir değer sağlıyorsunuz.
 
-<strong>Soru</strong>: Dönüş değeri olarak "kibar_OK" alıyorum ancak neden hala sorun yaşıyorum?
+<strong>Soru</strong>: <em>Dönüş değeri olarak "kibar_OK" alıyorum ancak neden hala sorun yaşıyorum?</em>
 
 Büyük olasılıkla Nextion HMI ile kart arasında bir bağlantı sorunu var. Lütfen bağlantılarınızı kontrol edin.
 
-<strong>Soru</strong>: UART birimi hangi ayarlar ile kullanılmalı?
+<strong>Soru</strong>: <em>UART birimi hangi ayarlar ile kullanılmalı?</em>
 
 UART çevre birimini asenkronize modda yapılandırmanız gerekir.
 
-<strong>Soru</strong>: Diğer KIBAR kütüphaneleri ile kullanılabilir mi?
+<strong>Soru</strong>: <em>Diğer KIBAR kütüphaneleri ile kullanılabilir mi?</em>
 
 Evet diğer KIBAR kütüphaneleri ile rahatlıkla kullanılabilir.
 
-<strong>Soru</strong>: Kütüphane derleyici tarafından görülemiyor. Ne yapmalıyım?
+<strong>Soru</strong>: <em>Kütüphane derleyici tarafından görülemiyor. Ne yapmalıyım?</em>
 
 Bu yaygın bir sorundur ve başlık dosyalarına giden yolların doğru şekilde ayarlanmadığını gösterir. Proje ayarlarından tüm konfigürasyonlar için başlık dosyalarının yolunu projeye ekleyin.
 
-<strong>Soru</strong>: Diğer KIBAR kütüphaneleri ile kullanılabilir mi?
+<strong>Soru</strong>: <em>Diğer KIBAR kütüphaneleri ile kullanılabilir mi?</em>
 
 Evet diğer KIBAR kütüphaneleri ile rahatlıkla kullanılabilir.
 
-<strong>Soru</strong>: Kütüphanenin tam sürümüne nasıl erişebilirim?
+<strong>Soru</strong>: <em>Kütüphanenin tam sürümüne nasıl erişebilirim?</em>
 
 Kütüphanenin tam sürümünü talep etmek için GitHub profilinde listelenen sosyal medya hesaplarıyla iletişime geçin.
