@@ -48,7 +48,7 @@ This is a common issue and indicates that the paths to the header files are not 
 
 Yes, it can be easily used with other KIBAR libraries.
 
-<strong>Questio</strong>n: <em>How can I access the complete version of the library?</em>
+<strong>Question</strong>n: <em>How can I access the complete version of the library?</em>
 
 Contact the social media accounts listed on the GitHub profile to request the complete version of the library.
 
@@ -93,10 +93,6 @@ Büyük olasılıkla Nextion HMI ile kart arasında bir bağlantı sorunu var. L
 <strong>Soru</strong>: <em>UART birimi hangi ayarlar ile kullanılmalı?</em>
 
 UART çevre birimini asenkronize modda yapılandırmanız gerekir.
-
-<strong>Soru</strong>: <em>Diğer KIBAR kütüphaneleri ile kullanılabilir mi?</em>
-
-Evet diğer KIBAR kütüphaneleri ile rahatlıkla kullanılabilir.
 
 <strong>Soru</strong>: <em>Kütüphane derleyici tarafından görülemiyor. Ne yapmalıyım?</em>
 
