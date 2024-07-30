@@ -2,7 +2,7 @@
 [EN]
 It is a Nextion Enhanced, Discovery and Basic HMI driver developed to support all STM32XXXX microcontrollers and boards, based on the HAL library. It supports all Nextion HMI command sets except for specific features.
 
-How to Use Kibar Nextion HMI Driver?
+Question: How to Use Kibar Nextion HMI Driver?
 
 If the command you are using is a Nextion tools command, you only need to include the header file related to that tool in your project. The aim here is to avoid unnecessary memory usage and prevent compilation of libraries that you do not use. If the command is a general Nextion command, it will be sufficient to include only the "kibar_nextion.h" header file.
 
@@ -28,7 +28,7 @@ As with all KIBAR drivers, the KIBAR_NEXTION driver returns a value of type KIBA
 
 <img src="Images/IMAGE4.png" width="auto">
 
-Why am I getting "kibar_ERROR" as the return value?
+Question: Why am I getting "kibar_ERROR" as the return value?
 
 You are likely encountering an error related to the UART peripheral unit or providing a value that is outside the range of valid limits for the property of the Nextion structure you are using.
 
@@ -36,7 +36,7 @@ You are likely encountering an error related to the UART peripheral unit or prov
 [TR]
 HAL kütüphanesini temel alan, tüm STM32XXXX mikrodenetleyicilerini ve kartlarını desteklemek için geliştirilmiş bir Nextion ENHANCED, DISCOVERY ve BASIC HMI sürücüsüdür. Spesifik bazı özellikler dışındaki tüm Nextion HMI komut setlerini destekler.
 
-Kibar Nextion HMI Sürücüsü Nasıl Kullanılır?
+Soru: Kibar Nextion HMI Sürücüsü Nasıl Kullanılır?
 
 Kullandığınız komut bir Nextion aracı komutu ise projenize yalnızca o araçla ilgili başlık dosyasını eklemeniz yeterlidir. Burada amaç gereksiz hafıza kullanımının önüne geçmek ve kullanmadığınız kütüphanelerin derlenmesini önlemektir. Eğer komut genel bir Nextion komutu ise projenize sadece “kibar_nextion.h” başlık dosyasının eklenmesi yeterli olacaktır.
 
@@ -62,6 +62,6 @@ Tüm KIBAR sürücülerinde olduğu gibi, KIBAR_NEXTION sürücüsü de tüm öz
 
 <img src="Images/IMAGE4.png" width="auto">
 
-Neden dönüş değeri olarak "kibar_ERROR" alıyorum?
+Soru: Neden dönüş değeri olarak "kibar_ERROR" alıyorum?
 
 Muhtemelen UART çevre birimi ile ilgili bir hatayla karşılaşıyorsunuz veya kullandığınız Nextion yapısının özelliği için geçerli limit aralığının dışında bir değer sağlıyorsunuz.
