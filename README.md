@@ -32,6 +32,10 @@ Question: Why am I getting "kibar_ERROR" as the return value?
 
 You are likely encountering an error related to the UART peripheral unit or providing a value that is outside the range of valid limits for the property of the Nextion structure you are using.
 
+Question: Why am I having problems even though I get "kibar_OK" as the return value?
+
+Most likely, there is a connection issue between the Nextion HMI and the board. Please check your connections.
+
 # KIBAR_STM32_NEXTION_ENHANCED_SÜRÜCÜSÜ
 [TR]
 HAL kütüphanesini temel alan, tüm STM32XXXX mikrodenetleyicilerini ve kartlarını desteklemek için geliştirilmiş bir Nextion ENHANCED, DISCOVERY ve BASIC HMI sürücüsüdür. Spesifik bazı özellikler dışındaki tüm Nextion HMI komut setlerini destekler.
@@ -65,3 +69,7 @@ Tüm KIBAR sürücülerinde olduğu gibi, KIBAR_NEXTION sürücüsü de tüm öz
 Soru: Neden dönüş değeri olarak "kibar_ERROR" alıyorum?
 
 Muhtemelen UART çevre birimi ile ilgili bir hatayla karşılaşıyorsunuz veya kullandığınız Nextion yapısının özelliği için geçerli limit aralığının dışında bir değer sağlıyorsunuz.
+
+Soru: Dönüş değeri olarak "kibar_OK" alıyorum ancak neden hala sorun yaşıyorum?
+
+Büyük olasılıkla Nextion HMI ile kart arasında bir bağlantı sorunu var. Lütfen bağlantılarınızı kontrol edin.
