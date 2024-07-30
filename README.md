@@ -48,7 +48,7 @@ Bunu oluşturmak için aşağıdaki görseldeki gibi NEW_KIBAR_NEXTION() fonksiy
 
 Daha sonra kullanılacak Nextion aracı için aracın kendi yapısını oluşturmalısınız. Genel adlandırma kuralı şu şekildedir: KIBAR_NEXTION_TOOLS_NAME_. Bu yapıyı bellekte oluşturmak için, yaratıcı komutunu çağırmalısınız. Genel adlandırma kuralı şu şekildedir: NEW_KIBAR_NEXTION_TOOLS_NAME(KIBAR_NEXTION_, char*, char*, ..); 
 
-Waveform ve Page yapıları dışındaki tüm yapılar üç parametre alır. Bunlar: daha önce oluşturulan KIBAR_NEXTION yapısı, aracın bulunduğu sayfanın adı ve aracın kendi adıdır. Waveform yapısı ayrıca yapının id değerini alırken Sayfa yapısı araç adı değerini almaz.
+Waveform ve Page yapıları dışındaki tüm yapılar üç parametre alır. Bunlar: Daha önce oluşturulan KIBAR_NEXTION yapısı, aracın bulunduğu sayfanın adı ve aracın kendi adıdır. Waveform yapısı ayrıca yapının id değerini alırken Sayfa yapısı araç adı değerini almaz.
 
 <img src="Images/IMAGE2.png" width="auto">
 
