@@ -18,3 +18,12 @@ Afterwards, you should create a structure for the Nextion tool you added. The ge
 You can now access the properties of the structures you have created through the structure itself. Below is an example code usage:
 
 //Image
+
+When using the properties of the created Nextion structures, you need to provide the structure itself and the necessary values related to that structure property as parameters.
+
+As with all KIBAR drivers, the KIBAR_NEXTION driver returns a value of type KIBAR_STATUS for all its properties. If your code isn't working, you can check the returned KIBAR_STATUS value to verify whether the Nextion structure is functioning correctly.
+
+
+Why am I getting "kibar_ERROR" as the return value?
+
+You are likely encountering an error related to the UART peripheral unit or providing a value that is outside the range of valid limits for the property of the Nextion structure you are using.
