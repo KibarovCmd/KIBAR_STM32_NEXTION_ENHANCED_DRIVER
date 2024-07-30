@@ -44,6 +44,14 @@ Question: The library is not visible to the compiler. What should I do?
 
 This is a common issue and indicates that the paths to the header files are not set correctly. From the project settings, add the header file paths to the project for all configurations.
 
+Question: Can it be used with other KIBAR libraries?
+
+Yes, it can be easily used with other KIBAR libraries.
+
+Question: How can I access the complete version of the library?
+
+Contact the social media accounts listed on the GitHub profile to request the complete version of the library.
+
 # KIBAR_STM32_NEXTION_ENHANCED_SÜRÜCÜSÜ
 [TR]
 HAL kütüphanesini temel alan, tüm STM32XXXX mikrodenetleyicilerini ve kartlarını desteklemek için geliştirilmiş bir Nextion ENHANCED, DISCOVERY ve BASIC HMI sürücüsüdür. Spesifik bazı özellikler dışındaki tüm Nextion HMI komut setlerini destekler.
@@ -84,8 +92,18 @@ Büyük olasılıkla Nextion HMI ile kart arasında bir bağlantı sorunu var. L
 
 Soru: UART birimi hangi ayarlar ile kullanılmalı?
 
+Soru: Diğer KIBAR kütüphaneleri ile kullanılabilir mi?
+
 UART çevre birimini asenkronize modda yapılandırmanız gerekir.
 
 Soru: Kütüphane derleyici tarafından görülemiyor. Ne yapmalıyım?
 
 Bu yaygın bir sorundur ve başlık dosyalarına giden yolların doğru şekilde ayarlanmadığını gösterir. Proje ayarlarından tüm konfigürasyonlar için başlık dosyalarının yolunu projeye ekleyin.
+
+Soru: Diğer KIBAR kütüphaneleri ile kullanılabilir mi?
+
+Evet diğer KIBAR kütüphaneleri ile rahatlıkla kullanılabilir.
+
+Soru: Kütüphanenin tam sürümüne nasıl erişebilirim?
+
+Kütüphanenin tam sürümünü talep etmek için GitHub profilinde listelenen sosyal medya hesaplarıyla iletişime geçin.
