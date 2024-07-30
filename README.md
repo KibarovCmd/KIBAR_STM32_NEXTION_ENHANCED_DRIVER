@@ -12,7 +12,9 @@ To create it, the NEW_KIBAR_NEXTION() function should be called as shown in the 
 
 <img src="Images/IMAGE1.png" width="auto">
 
-Afterwards, you should create a structure for the Nextion tool you added. The general naming convention is as follows: KIBAR_NEXTION_TOOLS_NAME_. To create this structure in memory, you should call the creation command. The general naming convention is as follows: NEW_KIBAR_NEXTION_TOOLS_NAME(KIBAR_NEXTION_, char*, char*); Except for the Waveform and Page structures, all structures take three parameters. These are: the previously created KIBAR_NEXTION structure, the name of the page where the tool is located, and the name of the tool. The Waveform structure additionally takes an id, while the Page structure does not take the tool name.
+Afterwards, you should create a structure for the Nextion tool you added. The general naming convention is as follows: KIBAR_NEXTION_TOOLS_NAME_. To create this structure in memory, you should call the creation command. The general naming convention is as follows: NEW_KIBAR_NEXTION_TOOLS_NAME(KIBAR_NEXTION_, char*, char*); 
+
+Except for the Waveform and Page structures, all structures take three parameters. These are: the previously created KIBAR_NEXTION structure, the name of the page where the tool is located, and the name of the tool. The Waveform structure additionally takes an id, while the Page structure does not take the tool name.
 
 <img src="Images/IMAGE2.png" width="auto">
 
@@ -44,7 +46,9 @@ Bunu oluşturmak için aşağıdaki görseldeki gibi NEW_KIBAR_NEXTION() fonksiy
 
 <img src="Images/IMAGE1.png" width="auto">
 
-Daha sonra kullanılacak Nextion aracı için aracın kendi yapısını oluşturmalısınız. Genel adlandırma kuralı şu şekildedir: KIBAR_NEXTION_TOOLS_NAME_. Bu yapıyı bellekte oluşturmak için, oluşturma komutunu çağırmalısınız. Genel adlandırma kuralı şu şekildedir: NEW_KIBAR_NEXTION_TOOLS_NAME(KIBAR_NEXTION_, char*, char*, ..); Waveform ve Page yapıları dışındaki tüm yapılar üç parametre alır. Bunlar: daha önce oluşturulan KIBAR_NEXTION yapısı, aracın bulunduğu sayfanın adı ve aracın kendi adıdır. Waveform yapısı ayrıca yapının id değerini alırken Sayfa yapısı araç adı değerini almaz.
+Daha sonra kullanılacak Nextion aracı için aracın kendi yapısını oluşturmalısınız. Genel adlandırma kuralı şu şekildedir: KIBAR_NEXTION_TOOLS_NAME_. Bu yapıyı bellekte oluşturmak için, yaratıcı komutunu çağırmalısınız. Genel adlandırma kuralı şu şekildedir: NEW_KIBAR_NEXTION_TOOLS_NAME(KIBAR_NEXTION_, char*, char*, ..); 
+
+Waveform ve Page yapıları dışındaki tüm yapılar üç parametre alır. Bunlar: daha önce oluşturulan KIBAR_NEXTION yapısı, aracın bulunduğu sayfanın adı ve aracın kendi adıdır. Waveform yapısı ayrıca yapının id değerini alırken Sayfa yapısı araç adı değerini almaz.
 
 <img src="Images/IMAGE2.png" width="auto">
 
