@@ -65,7 +65,7 @@ typedef enum {
 	kibar_ERROR
 } KIBAR_STATUS;
 
-KIBAR_NEXTION* NEW_KIBAR_NEXTION(UART_HandleTypeDef*);
+KIBAR_NEXTION_ NEW_KIBAR_NEXTION(UART_HandleTypeDef*);
 KIBAR_STATUS kibar_code_generator_data_16_t_(KIBAR_NEXTION_, char*, char*, char*, uint16_t);
 KIBAR_STATUS kibar_code_generator_data_32_t_(KIBAR_NEXTION_, char*, char*, char*, uint32_t);
 KIBAR_STATUS kibar_code_generator_data_text_(KIBAR_NEXTION_, char*, char*, char*, char*);
