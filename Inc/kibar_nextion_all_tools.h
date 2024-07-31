@@ -2,7 +2,7 @@
  * kibar_nextion_all_tools.h
  *
  *  Created on: Jul 31, 2024
- *      Author: isken
+ *      Author: İskender Musaoğlu
  */
 
 #ifndef KIBAR_NEXTION_INC_KIBAR_NEXTION_ALL_TOOLS_H_
