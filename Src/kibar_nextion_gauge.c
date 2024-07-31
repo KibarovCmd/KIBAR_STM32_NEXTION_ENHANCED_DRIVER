@@ -34,14 +34,14 @@ KIBAR_STATUS kibar_nextion_gauge_val(KIBAR_NEXTION_GAUGE_ kibar_nextion_gauge, u
 
 KIBAR_STATUS kibar_nextion_gauge_pco(KIBAR_NEXTION_GAUGE_ kibar_nextion_gauge, uint16_t data) {
 	if(data > KIBAR_COLOR_LIMIT_) return kibar_FALSE;
-	KIBAR_STATUS kibar_status = kibar_code_generator_data_text_(kibar_nextion_gauge->kibar_nextion, kibar_nextion_gauge->kibar_nextion_screen_name, kibar_nextion_gauge->kibar_nextion_tool_name, "pco", data);
+	KIBAR_STATUS kibar_status = kibar_code_generator_data_16_t_(kibar_nextion_gauge->kibar_nextion, kibar_nextion_gauge->kibar_nextion_screen_name, kibar_nextion_gauge->kibar_nextion_tool_name, "pco", data);
 	if(kibar_status == (uint8_t)kibar_FALSE) return kibar_OK;
 	else return kibar_FALSE;
 }
 
 KIBAR_STATUS kibar_nextion_gauge_wid(KIBAR_NEXTION_GAUGE_ kibar_nextion_gauge, uint16_t data) {
 	if(data > KIBAR_THICKNESS_LIMIT_) return kibar_FALSE;
-	KIBAR_STATUS kibar_status = kibar_code_generator_data_text_(kibar_nextion_gauge->kibar_nextion, kibar_nextion_gauge->kibar_nextion_screen_name, kibar_nextion_gauge->kibar_nextion_tool_name, "wid", data);
+	KIBAR_STATUS kibar_status = kibar_code_generator_data_16_t_(kibar_nextion_gauge->kibar_nextion, kibar_nextion_gauge->kibar_nextion_screen_name, kibar_nextion_gauge->kibar_nextion_tool_name, "wid", data);
 	if(kibar_status == (uint8_t)kibar_FALSE) return kibar_OK;
 	else return kibar_FALSE;
 }
