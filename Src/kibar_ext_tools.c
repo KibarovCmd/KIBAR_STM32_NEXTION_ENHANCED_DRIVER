@@ -15,7 +15,7 @@ static char* kibar_reverse_array_(char* data_array, uint16_t data_size) {
 }
 
 uint8_t kibar_size_integer_data_16_t(uint16_t kibar_data) {
-	uint16_t temp_index = 0;
+	uint8_t temp_index = 0;
 	while(kibar_data != 0) {
 		temp_index++;
 		kibar_data /= 10;
@@ -24,7 +24,7 @@ uint8_t kibar_size_integer_data_16_t(uint16_t kibar_data) {
 }
 
 uint8_t kibar_size_integer_data_32_t(uint32_t kibar_data) {
-	uint16_t temp_index = 0;
+	uint8_t temp_index = 0;
 	while(kibar_data != 0) {
 		temp_index++;
 		kibar_data /= 10;
@@ -33,7 +33,7 @@ uint8_t kibar_size_integer_data_32_t(uint32_t kibar_data) {
 }
 
 char* kibar_return_array_char_from_16_t(uint16_t kibar_data) {
-	uint16_t temp_index = kibar_size_integer_data_16_t(kibar_data);
+	uint8_t temp_index = kibar_size_integer_data_16_t(kibar_data);
 	char* array = (char*)malloc(sizeof(char) * temp_index);
 	for(int i = 0; i < temp_index; i++) {
 		array[i] = 48 + kibar_data % 10;
@@ -44,7 +44,7 @@ char* kibar_return_array_char_from_16_t(uint16_t kibar_data) {
 
 
 char* kibar_return_array_char_from_32_t(uint32_t kibar_data) {
-	uint16_t temp_index = kibar_size_integer_data_32_t(kibar_data);
+	uint8_t temp_index = kibar_size_integer_data_32_t(kibar_data);
 	char* array = (char*)malloc(sizeof(char) * temp_index);
 	for(int i = 0; i < temp_index; i++) {
 		array[i] = 48 + kibar_data % 10;
