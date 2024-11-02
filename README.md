@@ -4,7 +4,7 @@ It is a Nextion Enhanced, Discovery and Basic HMI driver developed to support al
 
 <strong>Question</strong>: <em>How to Use Kibar Nextion HMI Driver?</em>
 
-If the command you are using is a Nextion tools command, you only need to include the header file related to that tool in your project. The aim here is to avoid unnecessary memory usage and prevent compilation of libraries that you do not use (If you want to add all header files, it will be enough to add only the kibar_nextion_all_tools.h header file to your project.). If the command is a general Nextion command, it will be sufficient to include only the "kibar_nextion.h" header file.
+If the command you are using is a Nextion tools command, you only need to include the header file related to that tool in your project. The aim here is to avoid unnecessary memory usage and prevent compilation of libraries that you do not use (If you want to add all header files, it will be enough to add only the kibar_nextion_all_tools.h header file to your project.). If the command is a general Nextion command, it will be sufficient to include only the 'kibar_nextion.h' header file.
 
 The Kibar Nextion HMI driver, like all Kibar drivers, requires the creation of a KIBAR struct. In the Nextion HMI driver, this is referred to as KIBAR_NEXTION_ (The KIBAR_NEXTION structure is created with a reference to the UART peripheral unit to which it is connected.).
 
